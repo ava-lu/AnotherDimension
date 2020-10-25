@@ -37,10 +37,7 @@ public class ArrayOps {
   }
 
   public static int sum(int[][] arr) {
-    int newarr[] = new int[arr.length];
-    for (int i=0; i<arr.length; i++) {
-      newarr[i] = sumRows(arr)[i];
-    }
+    int newarr[] = sumRows(arr);
     return(sum(newarr));
   }
 
