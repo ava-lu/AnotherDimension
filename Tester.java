@@ -6,6 +6,7 @@ public class Tester {
     int[][]C = { {1,2,3,4}, {2,3,4,1}, {3,4,1,2}};
     int[][]D = { {1,1,1}, {2,2,2}, {3,3,3}};
     int[][]E = { {2,2,2}, {2,2,2}};
+    int[][]F = { {2,4,2}, {2,2,2}};
 
 // sum of 1D array
     System.out.println(ArrayOps.sum(B));
@@ -23,6 +24,8 @@ public class Tester {
     System.out.println(ArrayOps.isRowMagic(E));
 // does each column have same sum
     System.out.println(ArrayOps.isColMagic(E));
+// does specified row and column have same sum
+    System.out.println(ArrayOps.isLocationMagic(F,1,1));
   }
 
 }
