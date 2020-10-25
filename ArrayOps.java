@@ -1,5 +1,6 @@
 //git add,commit,push
 public class ArrayOps {
+
   public static int sum(int[] arr) {
     int sum = 0;
     for (int i=0; i < arr.length; i++) {
@@ -41,7 +42,19 @@ public class ArrayOps {
       newarr[i] = sumRows(arr)[i];
     }
     return(sum(newarr));
-
   }
+
+  public static int[] sumCols(int[][] matrix) {
+    int arr[] = new int[matrix.length];
+    for (int i=0; i<matrix[i].length; i++) {
+      int columnsum = 0;
+      for (int j=0; j<matrix.length;j++) {
+        columnsum += matrix[j][i];
+      }
+      arr[i] = columnsum;
+    }
+    return arr;
+  }
+
 
 }
