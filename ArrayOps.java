@@ -44,7 +44,6 @@ public class ArrayOps {
   public static int[] sumCols(int[][] matrix) {
     int arr[] = new int[matrix[0].length];
     for (int i=0; i<matrix.length; i++) {
-      int columnsum = 0;
       for (int j=0; j<matrix[i].length;j++) {
       arr[j] += matrix[i][j];
       }
