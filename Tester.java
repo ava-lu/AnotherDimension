@@ -16,6 +16,8 @@ public class Tester {
     System.out.println(ArrayOps.sum(A));
 // sum of each column
     System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+// does each row have same sum
+    System.out.println(ArrayOps.isRowMagic(A));
   }
 
 }
